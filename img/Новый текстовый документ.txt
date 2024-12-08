@@ -1,0 +1,13 @@
+<script>
+        /*
+    <header>
+        <ul>
+            <li><a href="img/.jpg img/ (2).jpg">лучшие торти</a></li>
+            <li><a href="img/.jpg">новие торти</a></li>
+            <li><a href="img/.jpg">мини торти</a></li>
+        </ul>
+    </header>*/
+    <script>
+header{
+    background: linear-gradient(#FFFAFA, #FAEB07);
+}
