@@ -1,125 +1,102 @@
-.accordion__content {
-    display: grid;
-    grid-template-rows: 0fr;
-
-    transition-duration: 0.3s;
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .code {
+            position: relative;
+            left: 50%;
+        }
+        .code_animation {
+            font-size: 15px;
+        }
+        .code_animation pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
 }
 
-.accordion__content-body {
-
-    overflow: hidden;
-}
-.accordion__details[open] + .accordion__content {
-    grid-template-rows: 1fr;
-}
-
-header{
-    background: linear-gradient(#FFFAFA, #fa0707);
-}
-ul{
-    margin: 0;
-    padding: 0px;
-    list-style: none;
-}
-a {
-    font-size: 40px;
-    padding: 0px;
-    color: yellow;
-    text-decoration: none;
-}
-a:hover{
-    color: #a907fa;
-    text-decoration: none;
-}
-li{
-
-    display: inline;
-}
-span1 {
-    font-size: 50px;
-    color: yellow;
-    background: linear-gradient(#FFFAFA, #fa0707);
-}
-hp1 {
-    font-size: 50px;
-}
-h {
-    font-size: 64px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    animation: bounce 1s ease-out;
-}
-
-body {
-    background-image:
-        url(../img/fon.jpg);
-        font-size: 300px;
-}
-h11{
-    
-    
-    font-size: 50px;
-    padding: 0px;
-}
-li {
-    text-decoration: none;
-}
-li {
-    background: linear-gradient
-    (to right, transparent),
-        linear-gradient(to, right,
-        #ff0000, #fff200,
-        #1e9600);
-    background-size:  100% 3px,
-    0 3px;
-    background-position: 100%
-    100%, 0 100%;
-    background-repeat:
-    no-repeat;
-    transition: background-size
-    400ms;
-}
-li:hover {
-    background-size: 0 3px,
-    100% 3px;
-}
-span1 {
-    text-decoration: none;
-}
-.f {
-    text-decoration: none;
-    
-
-    background: linear-gradient(to right, transparent, transparent),
-    linear-gradient(to right, #ff0000, #fff200, #1e9600);
-    font-size: 50px;
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-.f:hover{
-    background-size: 0 3px, 100% 3px;
-    color:  purple;
-    
-    
-}
-.accordion{
-    text-decoration: none;
-    
-
-    background: linear-gradient(to right, transparent, transparent),
-    linear-gradient(to right, #ff0000, #fff200, #1e9600);
-    font-size: 50px;
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-.accordion:hover{
-    background-size: 0 3px, 100% 3px;
-    color:  purple;
-    
-    
-}
+        .block {
+            position: relative;
+            background-color: white;
+            box-shadow: 5px 5px 50px;
+            height: 500px;
+            width: 1000px;
+            left: 150px;
+            border-radius: 50px;
+        }
+        .text {
+            position: relative;
+            left: 50px;
+            top: 50px;
+            font-size: 25px;
+            width: 900px;
+        }
+        .img {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            border-radius: 10px;
+        }
+        .imgg {
+            position: relative;
+            
+            height: 90px;
+            border-radius: 10px;
+        }
+    </style>
+    <title>нет тг есть сайт</title>
+</head>
+<body>
+    <a class="a" href="https://youtube.com/@юний_программист">
+        <img class="img" src="youtube.jpg" alt="">
+    </a>
+    <a class="a" href="https://github.com/Denis396454">
+        <img class="imgg" src="github.jpg" alt="">
+    </a>
+    <a class="a" href="https://tiktok.com/@young_programmer9">
+        <img class="img" src="tiktok.jpg" alt="">
+    </a>
+    <div class="block">
+        <div class="text">
+            kettle це мій язик программирования його название придумано по детски kettle якщо перевести з англіскої мови це чайник чайник єто чай чай п'ют дети дети це то му що мені 9 років ще що пойме дитина название канала youtube юний_программист тик ток young_programmer9 я з України
+        </div>
+    </div>
+    <h1 class="code">код анимации</h1>
+    <div class="code_animation"><pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="UK"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;style&gt;
+        .anim {
+            position: relative;
+            background: red;
+            width: 50px;
+            height: 50px;
+            animation-name: anim;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        .hi {
+            position: relative;
+            font-size: 50px;
+            animation-name: hi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    &lt;/style&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="anim"&gt;&lt;/div&gt;
+    &lt;div class="hi"&gt;hi&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div>
+</body>
+</html>
